@@ -1,0 +1,13 @@
+% +++
+% latex = "platex"
+% sequence = ["latex", "dvips", "ps2pdf"]
+% +++
+\documentclass[dvips]{jsarticle}
+\usepackage[deluxe,jis2004]{otf}
+\def\test{原ノ味フォントです！葛飾区の\UTF{9AD9}島屋と祇園の\CID{13706}野家で森\UTF{9DD7}外と内田百\UTF{9592}が123個の\UTF{2603}を買った。\par}
+\begin{document}
+\test
+\textbf{\test}
+\textsf{\test}
+\textbf{\textsf{\test}}
+\end{document}

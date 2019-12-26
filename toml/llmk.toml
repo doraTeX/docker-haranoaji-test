@@ -1,0 +1,2 @@
+source = "lualatex.tex"
+latex = "lualatex"

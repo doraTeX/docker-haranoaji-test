@@ -1,0 +1,10 @@
+%#!uplatex
+\documentclass[uplatex,dvipdfmx]{jsarticle}
+\usepackage[deluxe,jis2004]{otf}
+\def\test{原ノ味フォントです！葛飾区の髙島屋と祇園の𠮷野家で森鷗外と内田百閒が123個の☃を買った。\par}
+\begin{document}
+\test
+\textbf{\test}
+\textsf{\test}
+\textbf{\textsf{\test}}
+\end{document}

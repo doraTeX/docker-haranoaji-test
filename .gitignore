@@ -1,0 +1,16 @@
+.DS_Store
+*.aux
+*.log
+*.dvi
+*.pdf
+*.ps
+*.toc
+*.synctex.gz(busy)
+*.synctex.gz
+*.synctex
+*.fls
+*.ind
+*.idx
+*.ilg
+*.bbl
+*.blg
