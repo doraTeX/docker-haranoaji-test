@@ -8,6 +8,7 @@
 *.synctex.gz(busy)
 *.synctex.gz
 *.synctex
+*.synctex(busy)
 *.fls
 *.ind
 *.idx
