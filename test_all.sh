@@ -34,5 +34,9 @@ function dockertl () {
     dockertl llmk xelatex
   )
   
+  (cd docker-compose
+    docker-compose up
+  )
+  
   find . \( -name "*.ps" -or  -name "*.dvi" -or -name "*.synctex" -or -name "*.synctex.gz" -or -name "*.synctex.gz(busy)" -or -name "*.log" -or -name "*.aux" -or -name "*.fls" \) -print -exec rm -f {} \;
 )
