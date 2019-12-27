@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function dockertl () {
-  docker run --rm --mount type=bind,src="$(pwd)",dst=/workdir --mount type=volume,src=ltfontcache,dst=/usr/local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl doratex/texlive2019ja-haranoaji $@
+  docker run --rm --mount type=bind,src="$(pwd)",dst=/workdir --mount type=volume,src=ltfontcache,dst=/usr/local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl doratex/texlive2019ja-haranoaji "$@"
 }
 
 (cd "$(dirname $0)"
