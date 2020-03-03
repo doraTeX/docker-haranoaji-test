@@ -1,7 +1,10 @@
 #!/bin/bash
 
+TL_VERSION=2020
+DOCKER_IMAGE=doratex/texlive2020pretest-haranoaji:20200303
+
 function dockertl () {
-  docker run --rm --mount type=bind,src="$(pwd)",dst=/workdir --mount type=volume,src=ltfontcache,dst=/usr/local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl doratex/texlive2019ja-haranoaji "$@"
+  docker run --rm --mount type=bind,src="$(pwd)",dst=/workdir --mount type=volume,src=ltcache,dst=/usr/local/texlive/${TL_VERSION}/texmf-var/luatex-cache ${DOCKER_IMAGE} "$@"
 }
 
 (cd "$(dirname $0)"
