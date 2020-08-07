@@ -5,7 +5,7 @@ services:
     volumes:
         - type: volume
           source: ltfontcache
-          target: /usr/local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl
+          target: /usr/local/texlive/2019/texmf-var/luatex-cache/generic-dev/fonts/otl
         - type: bind
           source: .
           target: /workdir
