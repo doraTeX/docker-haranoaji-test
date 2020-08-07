@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   dockertl:
-    image: doratex/texlive2019ja-haranoaji:latest
+    image: doratex/texlive2019ja-haranoaji:frozen
     volumes:
         - type: volume
           source: ltfontcache
